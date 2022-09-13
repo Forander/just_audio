@@ -519,7 +519,8 @@ class _PlayerAudioHandler extends BaseAudioHandler
   bool get hasPrevious => previousIndex != -1;
 
   int getRelativeIndex(int offset) {
-    if (_repeatMode == AudioServiceRepeatMode.one) return index!;
+    print('just_audio_background getRelativeIndex - IGNORE REPEAT');
+    //if (_repeatMode == AudioServiceRepeatMode.one) return index!;
     final effectiveIndices = this.effectiveIndices;
     if (effectiveIndices.isEmpty) return -1;
     final effectiveIndicesInv = this.effectiveIndicesInv;
